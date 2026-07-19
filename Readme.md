@@ -7,7 +7,7 @@
 ---
 
 ## 🎯 Target Platforms
-- 🐧 **Linux** (Ubuntu, Kali, Debian, RHEL)
+- 🐧 **Linux** (Ubuntu, Kali, Debian )
 - 🪟 **Windows** (CMD)
 - ⚡ **Windows PowerShell**
 
@@ -23,10 +23,9 @@
 7. [📜 Log & Event Management](#7-log--event-management)
 8. [⚙️ Processes & Network](#8-processes--network)
 9. [📁 File Transfer](#9-file-transfer)
-10. [🤖 Automation & Scripting](#10-automation--scripting)
-11. [📋 Compliance & Audit](#11-compliance--audit)
-12. [🛡️ SOC & Threat Hunting Toolkit](#12-soc--threat-hunting-toolkit)
-13. [🔥 Master Cheat Sheet & Learning Path](#13-master-cheat-sheet--learning-path)
+10. [📋 Compliance & Audit](#10-compliance--audit)
+11. [🛡️ SOC & Threat Hunting Toolkit](#11-soc--threat-hunting-toolkit)
+12. [🔥 Master Cheat Sheet & Learning Path](#12-master-cheat-sheet--learning-path)
 
 ---
 
@@ -476,45 +475,7 @@ wget URL                     # Download file directly
 
 ---
 
-## <a id="10-automation--scripting"></a>🤖 10. Automation & Scripting
-
-<details>
-<summary><b>🛠️ Scripting Snippets & Task Scheduling</b> (Click to expand)</summary>
-
-### Bash Loops & Parallel Execution
-```bash
-# Simple ping sweep loop
-for ip in $(seq 1 254); do
-  ping -c1 192.168.1.$ip
-done
-
-# Parallel execution tools
-xargs
-parallel
-```
-
-### Task Scheduling (Linux)
-```bash
-crontab -e                   # Edit cron jobs
-systemctl list-timers        # View systemd timers
-```
-
-### PowerShell Automation
-```powershell
-ForEach-Object
-Invoke-Command
-```
-
-### Core Python Modules for Networking
-* `socket` - Low-level network interface
-* `scapy` - Interactive packet manipulation program
-* `requests` - Elegant and simple HTTP library
-* `paramiko` - SSH2 protocol library
-</details>
-
----
-
-## <a id="11-compliance--audit"></a>📋 11. Compliance & Audit (Linux Focus)
+## <a id="10-compliance--audit"></a>📋 10. Compliance & Audit (Linux Focus)
 
 <details>
 <summary><b>🔎 Ports, Packages & System Posture</b> (Click to expand)</summary>
@@ -548,7 +509,7 @@ aa-status                    # Check AppArmor status
 
 ---
 
-## <a id="12-soc--threat-hunting-toolkit"></a>🛡️ 12. SOC & Threat Hunting Toolkit
+## <a id="11-soc--threat-hunting-toolkit"></a>🛡️ 11. SOC & Threat Hunting Toolkit
 
 | OS Platform | Essential Command Toolkit |
 | :--- | :--- |
@@ -557,7 +518,7 @@ aa-status                    # Check AppArmor status
 
 ---
 
-## <a id="13-master-cheat-sheet--learning-path"></a>🔥 13. Master Cheat Sheet & Learning Path
+## <a id="12-master-cheat-sheet--learning-path"></a>🔥 12. Master Cheat Sheet & Learning Path
 
 ### High-Yield Commands by Category
 | Category | Essential Commands |
@@ -583,4 +544,4 @@ aa-status                    # Check AppArmor status
 7. **Compliance / GRC:** Service inspection, package auditing, user/group management, SSH configuration review, and security module status.
 
 ---
-*Generated for immediate use. Feel free to download, render in Obsidian, GitHub, or any Markdown-compatible viewer.*
+
